@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: src
+    database: postgres
+    schema: dbt
+    tables:
+#      - name: source_customers
+#      - name: source_orders
+      - name: source_city
+      - name: source_client
+      - name: source_client_address
+      - name: source_client_type
+      - name: source_country
+      - name: source_currency
+      - name: source_currency_rate
+      - name: source_goods
+      - name: source_order_status
+      - name: source_order_status_history
+      - name: source_order_with_delay
+      - name: source_orders
+      - name: source_warehouse
+      - name: source_warehouse_address
+      - name: source_warehouse_params
