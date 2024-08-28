@@ -5,17 +5,13 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_order_status'
 derived_columns:
-  CLIENT_KEY:
-    - 'order_id'
-    - 'client_type_code'
-  RECORD_SOURCE: '!CSV_CLIENT'
+  ORDER_STATUS_KEY: 'id'
+  RECORD_SOURCE: '!CSV_ORDER_STATUS'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  ORDER_STATUS_PK: 'id'
+  ORDER_STATUS_HASHDIFF:
     is_hashdiff: true
     columns:
       - 'name'

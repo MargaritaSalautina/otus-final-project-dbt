@@ -3,13 +3,13 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'stg_city_country'
+source_model: 'stg_client_address_city'
 derived_columns:
-    RECORD_SOURCE: '!CSV_CITY'
+    RECORD_SOURCE: '!CSV_CLIENT_ADDRESS'
 hashed_columns:
     LINK_CUSTOMER_ORDER_PK:
         - 'CITY_KEY'
-        - 'COUNTRY_KEY'
+        - 'CLIENT_ADDRESS_KEY'
 {%- endset -%}
 
 

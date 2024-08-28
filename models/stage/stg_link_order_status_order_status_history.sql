@@ -3,13 +3,13 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'stg_city_country'
+source_model: 'stg_order_status_order_status_history'
 derived_columns:
-    RECORD_SOURCE: '!CSV_CITY'
+    RECORD_SOURCE: '!CSV_ORDER_STATUS_HISTORY'
 hashed_columns:
     LINK_CUSTOMER_ORDER_PK:
-        - 'CITY_KEY'
-        - 'COUNTRY_KEY'
+        - 'ORDER_STATUS_KEY'
+        - 'ORDER_STATUS_HISTORY_KEY'
 {%- endset -%}
 
 

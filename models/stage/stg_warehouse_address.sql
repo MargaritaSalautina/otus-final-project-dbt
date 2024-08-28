@@ -5,17 +5,17 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_orders'
+source_model: 'source_warehouse_address'
 derived_columns:
-  ORDER_KEY: 'id'
-  RECORD_SOURCE: '!CSV_ORDERS'
+  WAREHOUSE_ADDRESS_KEY: 'id'
+  RECORD_SOURCE: '!CSV_WAREHOUSE_ADDRESS'
 hashed_columns:
-  ORDER_PK: 'id'
-  ORDER_HASHDIFF:
+  WAREHOUSE_ADDRESS_PK: 'id'
+  WAREHOUSE_ADDRESS_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'order_date'
-      - 'status'
+      - 'street'
+      - 'house'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

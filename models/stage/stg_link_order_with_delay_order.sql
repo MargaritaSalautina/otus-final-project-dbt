@@ -3,13 +3,13 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'stg_city_country'
+source_model: 'stg_order_with_delay_order'
 derived_columns:
-    RECORD_SOURCE: '!CSV_CITY'
+    RECORD_SOURCE: '!CSV_ORDER_WITH_DELAY'
 hashed_columns:
     LINK_CUSTOMER_ORDER_PK:
-        - 'CITY_KEY'
-        - 'COUNTRY_KEY'
+        - 'ORDER_KEY'
+        - 'ORDER_WITH_DELAY_KEY'
 {%- endset -%}
 
 

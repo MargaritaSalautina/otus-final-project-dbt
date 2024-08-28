@@ -5,20 +5,18 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_goods'
 derived_columns:
-  CLIENT_KEY:
-    - 'order_id'
-    - 'client_type_code'
-  RECORD_SOURCE: '!CSV_CLIENT'
+  GOOD_KEY: 'id'
+  RECORD_SOURCE: '!CSV_GOODS'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  GOOD_PK: 'id'
+  GOOD_HASHDIFF:
     is_hashdiff: true
     columns:
       - 'name'
+      - 'cost_per_unit'
+      - 'count'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

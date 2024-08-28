@@ -5,20 +5,19 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_client_address'
 derived_columns:
-  CLIENT_KEY: 'id'
-  RECORD_SOURCE: '!CSV_CITY'
+  CLIENT_ADDRESS_KEY: 'id'
+  RECORD_SOURCE: '!CSV_CLIENT_ADDRESS'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  CLIENT_ADDRESS_PK:
+    - 'id'
+  CLIENT_ADDRESS_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'name'
-      - 'type_id'
-      - 'client_address_id'
+      - 'street'
+      - 'house'
+      - 'is_valid'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

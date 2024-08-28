@@ -5,20 +5,18 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_currency_rate'
 derived_columns:
-  CLIENT_KEY:
-    - 'order_id'
-    - 'client_type_code'
-  RECORD_SOURCE: '!CSV_CLIENT'
+  CURRENCY_RATE_KEY: 'id'
+  RECORD_SOURCE: '!CSV_CURRENCY_RATE'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  CURRENCY_RATE_PK: 'id'
+  CURRENCY_RATE_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'name'
+      - 'rate_to_rur'
+      - 'date_start'
+      - 'date_end'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

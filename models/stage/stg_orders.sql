@@ -5,20 +5,20 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_orders'
 derived_columns:
-  CLIENT_KEY:
-    - 'order_id'
-    - 'client_type_code'
-  RECORD_SOURCE: '!CSV_CLIENT'
+  ORDER_KEY: 'id'
+  RECORD_SOURCE: '!CSV_ORDERS'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  ORDER_PK: 'id'
+  ORDER_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'name'
+      - 'order_date'
+      - 'length'
+      - 'height'
+      - 'width'
+      - 'weight'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

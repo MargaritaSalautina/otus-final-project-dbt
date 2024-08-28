@@ -5,20 +5,16 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_client'
+source_model: 'source_order_with_delay'
 derived_columns:
-  CLIENT_KEY:
-    - 'order_id'
-    - 'client_type_code'
-  RECORD_SOURCE: '!CSV_CLIENT'
+  ORDER_WITH_DELAY_KEY: 'id'
+  RECORD_SOURCE: '!CSV_ORDER_WITH_DELAY'
 hashed_columns:
-  CLIENT_PK:
-    - 'order_id'
-    - 'client_type_code'
-  CLIENT_HASHDIFF:
+  ORDER_WITH_DELAY_PK: 'id'
+  ORDER_WITH_DELAY_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'name'
+      - 'reason_for_delay'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

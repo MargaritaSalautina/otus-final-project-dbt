@@ -5,13 +5,13 @@
 }}
 
 {%- set yaml_metadata -%}
-source_model: 'source_country'
+source_model: 'source_currency'
 derived_columns:
-  COUNTRY_KEY: 'id'
-  RECORD_SOURCE: '!CSV_COUNTRY'
+  CURRENCY_KEY: 'code'
+  RECORD_SOURCE: '!CSV_CURRENCY'
 hashed_columns:
-  COUNTRY_PK: 'id'
-  COUNTRY_HASHDIFF:
+  CURRENCY_PK: 'code'
+  CURRENCY_HASHDIFF:
     is_hashdiff: true
     columns:
       - 'name'
