@@ -1,8 +1,8 @@
-with stg_order as (
+with stg_orders as (
     select ORDER_KEY, ORDER_PK, currency_code from {{ref('stg_orders')}}
 ),
 
-stg_curency as (
+stg_currency as (
     select code, CURRENCY_KEY, CURRENCY_PK from {{ref('stg_currency')}}
 )
 

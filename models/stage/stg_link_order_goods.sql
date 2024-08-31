@@ -7,7 +7,7 @@ source_model: 'stg_order_goods'
 derived_columns:
     RECORD_SOURCE: '!CSV_GOODS'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_ORDER_GOOD_PK:
         - 'ORDER_KEY'
         - 'GOOD_KEY'
 {%- endset -%}

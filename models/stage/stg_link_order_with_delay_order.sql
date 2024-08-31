@@ -7,7 +7,7 @@ source_model: 'stg_order_with_delay_order'
 derived_columns:
     RECORD_SOURCE: '!CSV_ORDER_WITH_DELAY'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_ORDER_WITH_DELAY_ORDER_PK:
         - 'ORDER_KEY'
         - 'ORDER_WITH_DELAY_KEY'
 {%- endset -%}

@@ -7,7 +7,7 @@ source_model: 'stg_currency_currency_rate'
 derived_columns:
     RECORD_SOURCE: '!CSV_CURRENCY_RATE'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_CURRENCY_CURRENCY_RATE_PK:
         - 'CURRENCY_KEY'
         - 'CURRENCY_RATE_KEY'
 {%- endset -%}

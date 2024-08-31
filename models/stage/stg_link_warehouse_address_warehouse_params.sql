@@ -7,7 +7,7 @@ source_model: 'stg_warehouse_address_warehouse_params'
 derived_columns:
     RECORD_SOURCE: '!CSV_WAREHOUSE_PARAMS'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_WAREHOUSE_ADDRESS_WAREHOUSE_PARAMS_PK:
         - 'WAREHOUSE_ADDRESS_KEY'
         - 'WAREHOUSE_PARAMS_KEY'
 {%- endset -%}

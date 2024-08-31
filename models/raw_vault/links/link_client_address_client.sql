@@ -4,9 +4,9 @@
     )
 }}
 
-{%- set source_model = 'stg_link_customer_order'-%}
-{%- set src_pk = "LINK_CUSTOMER_ORDER_PK" -%}
-{%- set src_fk = ["CUSTOMER_PK", "ORDER_PK"] -%}
+{%- set source_model = 'stg_link_client_address_client'-%}
+{%- set src_pk = "LINK_CLIENT_ADDRESS_CLIENT_PK" -%}
+{%- set src_fk = ["CLIENT_PK", "CLIENT_ADDRESS_PK"] -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

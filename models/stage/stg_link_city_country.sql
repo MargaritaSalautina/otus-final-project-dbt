@@ -7,7 +7,7 @@ source_model: 'stg_city_country'
 derived_columns:
     RECORD_SOURCE: '!CSV_CITY'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_CITY_COUNTRY_PK:
         - 'CITY_KEY'
         - 'COUNTRY_KEY'
 {%- endset -%}

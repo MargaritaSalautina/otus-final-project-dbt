@@ -7,7 +7,7 @@ source_model: 'stg_order_currency'
 derived_columns:
     RECORD_SOURCE: '!CSV_ORDERS'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_ORDER_CURRENCY_PK:
         - 'ORDER_KEY'
         - 'CURRENCY_KEY'
 {%- endset -%}

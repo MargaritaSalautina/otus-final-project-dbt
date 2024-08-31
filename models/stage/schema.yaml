@@ -5,8 +5,6 @@ sources:
     database: postgres
     schema: dbt
     tables:
-#      - name: source_customers
-#      - name: source_orders
       - name: source_city
       - name: source_client
       - name: source_client_address

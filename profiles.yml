@@ -1,4 +1,4 @@
-jaffle_shop:
+otus_project:
   outputs:
     dev:
       type: postgres

@@ -1,9 +1,9 @@
-with stg_curency as (
+with stg_currency as (
     select code, CURRENCY_KEY, CURRENCY_PK from {{ref('stg_currency')}}
 ),
 
 stg_currency_rate as (
-    select id, CURRENCY_RATE_KEY, CURRENCY_RATE_PK from {{ref('stg_currency_rate')}}
+    select currency_code, CURRENCY_RATE_KEY, CURRENCY_RATE_PK from {{ref('stg_currency_rate')}}
 )
 
 select  CURRENCY_KEY, CURRENCY_RATE_KEY, CURRENCY_PK, CURRENCY_RATE_PK from stg_currency sc

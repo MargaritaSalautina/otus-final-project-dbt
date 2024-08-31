@@ -14,7 +14,7 @@ hashed_columns:
   CURRENCY_RATE_HASHDIFF:
     is_hashdiff: true
     columns:
-      - 'rate_to_rur'
+      - 'relation_to_rur'
       - 'date_start'
       - 'date_end'
 {%- endset -%}

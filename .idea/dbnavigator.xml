@@ -12,12 +12,12 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2c67199b-6edf-4638-8999-5ebfe4b3ad83">
-      <console name="Dev Db" type="STANDARD" schema="" session="Main" />
+      <console name="Dev Db" type="STANDARD" schema="dbt" session="Main"><![CDATA[select * from dbt.source_order_status_history;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -28,6 +28,18 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.source_order_status_history" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.source_client" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.source_warehouse_params" active-filter-id="">
+      <filter id="bc0b3439-ccc5-4a03-93fd-ec7db486f08e" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id;address_id;warehouse_id;max_loading_weight;max_loading_volum" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />

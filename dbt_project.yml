@@ -1,5 +1,5 @@
-name: jaffle_shop_dbtvault
-profile: jaffle_shop
+name: otus_project_dbtvault
+profile: otus_project
 version: '0.1.0'
 require-dbt-version: ['>=1.4.0', '<1.5.0']
 config-version: 2
@@ -15,8 +15,13 @@ target-path: target
 vars:
   load_date: 'current_timestamp'
 
+seeds:
+  otus_project_dbtvault:
+    source_client_type:
+      +delimiter: ";"
+
 models:
-  jaffle_shop_dbtvault:
+  otus_project_dbtvault:
     stage:
       tags:
         - 'stage'

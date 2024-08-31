@@ -7,7 +7,7 @@ source_model: 'stg_warehouse_order_status_history'
 derived_columns:
     RECORD_SOURCE: '!CSV_ORDER_STATUS_HISTORY'
 hashed_columns:
-    LINK_CUSTOMER_ORDER_PK:
+    LINK_WAREHOUSE_ORDER_STATUS_HISTORY_PK:
         - 'WAREHOUSE_KEY'
         - 'ORDER_STATUS_HISTORY_KEY'
 {%- endset -%}

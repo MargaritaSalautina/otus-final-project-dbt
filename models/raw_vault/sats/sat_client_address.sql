@@ -4,10 +4,10 @@
     )
 }}
 
-{%- set source_model = 'stg_customers' -%}
-{%- set src_pk = "CUSTOMER_PK" -%}
-{%- set src_hashdiff = "CUSTOMER_HASHDIFF" -%}
-{%- set src_payload = ["first_name", "last_name", "id"] -%}
+{%- set source_model = 'stg_client_address' -%}
+{%- set src_pk = "CLIENT_ADDRESS_PK" -%}
+{%- set src_hashdiff = "CLIENT_ADDRESS_HASHDIFF" -%}
+{%- set src_payload = ["street", "house", "is_valid"] -%}
 {%- set src_eff = "EFFECTIVE_FROM" -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}

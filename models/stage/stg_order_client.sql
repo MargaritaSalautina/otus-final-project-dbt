@@ -1,4 +1,4 @@
-with stg_order as (
+with stg_orders as (
     select ORDER_KEY, ORDER_PK, id from {{ref('stg_orders')}}
 ),
 
