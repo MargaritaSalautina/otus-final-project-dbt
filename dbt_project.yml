@@ -47,3 +47,7 @@ models:
       tags:
         - 'cdm'
       materialized: view
+    marts:
+      tags:
+        - 'marts'
+      materialized: view

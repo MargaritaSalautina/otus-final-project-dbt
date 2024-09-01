@@ -11,7 +11,7 @@ select
     os.ORDER_PK,
 	os.status_datetime,
     loo.ORDER_STATUS_PK,
-lw.WAREHOUSE_PK
+    lw.WAREHOUSE_PK
 from order_status_history os
 LEFT JOIN {{ ref('link_order_status_order_status_history') }} AS loo on loo.ORDER_STATUS_HISTORY_PK = os.ORDER_STATUS_HISTORY_PK
 LEFT JOIN {{ ref('link_warehouse_order_status_history') }} AS lw on lw.ORDER_STATUS_HISTORY_PK = os.ORDER_STATUS_HISTORY_PK

@@ -17,7 +17,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2c67199b-6edf-4638-8999-5ebfe4b3ad83">
-      <console name="Dev Db" type="STANDARD" schema="dbt" session="Main"><![CDATA[drop view dbt.stg_order_status_history cascade;]]></console>
+      <console name="Dev Db" type="STANDARD" schema="dbt" session="Main"><![CDATA[select * from dbt.f_warehouse_loading]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -27,7 +27,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" object-ref="schemas/dbt/views/stg_order_status" />
       <object connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" object-ref="consoles/Dev Db" />
     </open-files>
   </component>
@@ -56,9 +55,11 @@
       </filter>
     </filter-actions>
     <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.stg_link_order_goods" active-filter-id="" />
+    <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.stg_order_status_history1" active-filter-id="" />
     <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.source_client_address" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.stg_order_status_history" active-filter-id="" />
     <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.cv_date" active-filter-id="" />
+    <filter-actions connection-id="2c67199b-6edf-4638-8999-5ebfe4b3ad83" dataset="dbt.cv_order_clients_info" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />

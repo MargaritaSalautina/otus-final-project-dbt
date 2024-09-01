@@ -10,4 +10,4 @@ LEFT JOIN {{ ref('link_client_address_client') }} AS lac on lac.CLIENT_PK = sc.C
 LEFT JOIN {{ ref('link_client_address_city') }} AS lacc on lacc.CLIENT_ADDRESS_PK = lac.CLIENT_ADDRESS_PK
 LEFT JOIN {{ ref('sat_client_address') }} AS sac on sac.CLIENT_ADDRESS_PK = lac.CLIENT_ADDRESS_PK
 LEFT JOIN {{ ref('link_client_client_type') }} AS lcc on lcc.CLIENT_PK = sc.CLIENT_PK
-WHERE sc.client_type_code = 'sender'
+WHERE sc.client_type_code = 'receiver'
