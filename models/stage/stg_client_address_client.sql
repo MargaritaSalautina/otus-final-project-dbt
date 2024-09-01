@@ -3,7 +3,7 @@ with stg_client as (
 ),
 
 stg_client_address as (
-    select CLIENT_ADDRESS_KEY, CLIENT_ADDRESS_PK, id from {{ref('stg_client_address')}}
+    select CLIENT_ADDRESS_KEY, CLIENT_ADDRESS_PK, id::bigint AS id from {{ref('stg_client_address')}}
 )
 
 select  CLIENT_ADDRESS_KEY, CLIENT_KEY, CLIENT_ADDRESS_PK, CLIENT_PK from stg_client sc

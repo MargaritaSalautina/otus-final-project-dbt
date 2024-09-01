@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: raw_vault
+    database: postgres
+    schema: dbt
+    tables:
+      - name: hub_city
+      - name: hub_client
+      - name: hub_client_address
+      - name: hub_client_type
+      - name: hub_country
+      - name: hub_currency
+      - name: hub_currency_rate
+      - name: hub_good
+      - name: hub_order
+      - name: hub_order_status
+      - name: hub_order_status_history
+      - name: hub_order_with_delay
+      - name: hub_warehouse
+      - name: hub_warehouse_address
+      - name: hub_warehouse_params
+      - name: link_city_country
+      - name: link_client_address_city
+      - name: link_client_address_client
+      - name: link_client_client_type
+      - name: link_currency_currency_rate
+      - name: link_order_client
+      - name: link_order_currency
+      - name: link_order_goods
+      - name: link_order_order_status_history
+      - name: link_order_status_order_status_history
+      - name: link_order_with_delay_order
+      - name: link_warehouse_address_city     
+      - name: link_warehouse_address_warehouse_params
+      - name: link_warehouse_order_status_history
+      - name: link_warehouse_warehouse_params
+      - name: sat_city
+      - name: sat_client
+      - name: sat_client_address
+      - name: sat_client_type
+      - name: sat_country
+      - name: sat_currency
+      - name: sat_currency_rate
+      - name: sat_good
+      - name: sat_order
+      - name: sat_order_status
+      - name: sat_order_status_history
+      - name: sat_order_with_delay
+      - name: sat_warehouse
+      - name: sat_warehouse_address
+      - name: sat_warehouse_params

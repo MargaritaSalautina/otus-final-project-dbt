@@ -3,7 +3,7 @@ with stg_orders as (
 ),
 
 stg_client as (
-    select CLIENT_KEY, CLIENT_PK, order_id from {{ref('stg_client')}}
+    select CLIENT_KEY, CLIENT_PK, order_id::bigint AS order_id from {{ref('stg_client')}}
 )
 
 select  ORDER_KEY, CLIENT_KEY, ORDER_PK, CLIENT_PK from stg_orders o

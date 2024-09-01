@@ -39,3 +39,11 @@ models:
       sats:
         tags:
           - 'satellite'
+    business_vault:
+      tags:
+        - 'business_vault'
+      materialized: view
+    cdm:
+      tags:
+        - 'cdm'
+      materialized: view

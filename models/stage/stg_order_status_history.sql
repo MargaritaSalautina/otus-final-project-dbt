@@ -11,6 +11,10 @@ derived_columns:
   RECORD_SOURCE: '!CSV_ORDER_STATUS_HISTORY'
 hashed_columns:
   ORDER_STATUS_HISTORY_PK: 'id'
+  ORDER_STATUS_HISTORY_HASHDIFF:
+    is_hashdiff: true
+    columns:
+      - 'status_datetime'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

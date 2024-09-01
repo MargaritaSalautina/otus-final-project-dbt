@@ -18,6 +18,7 @@ hashed_columns:
   CLIENT_HASHDIFF:
     is_hashdiff: true
     columns:
+      - 'client_type_code'
       - 'name'
 {%- endset -%}
 

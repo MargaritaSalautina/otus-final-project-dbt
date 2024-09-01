@@ -4,7 +4,7 @@
     )
 }}
 
-{%- set source_model = 'stg_client' -%}
+{%- set source_model = 'stg_warehouse' -%}
 {%- set src_pk = "WAREHOUSE_PK" -%}
 {%- set src_hashdiff = "WAREHOUSE_HASHDIFF" -%}
 {%- set src_payload = ["name", "system_name"] -%}

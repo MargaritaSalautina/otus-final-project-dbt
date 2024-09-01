@@ -3,7 +3,7 @@ with stg_orders as (
 ),
 
 stg_goods as (
-    select GOOD_KEY, GOOD_PK, order_id from {{ref('stg_goods')}}
+    select GOOD_KEY, GOOD_PK, order_id::bigint AS order_id from {{ref('stg_goods')}}
 )
 
 select  ORDER_KEY, GOOD_KEY, ORDER_PK, GOOD_PK from stg_orders o

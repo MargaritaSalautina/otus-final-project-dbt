@@ -7,7 +7,7 @@
 {%- set source_model = 'stg_client' -%}
 {%- set src_pk = "CLIENT_PK" -%}
 {%- set src_hashdiff = "CLIENT_HASHDIFF" -%}
-{%- set src_payload = ["name"] -%}
+{%- set src_payload = ["name", "client_type_code"] -%}
 {%- set src_eff = "EFFECTIVE_FROM" -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
