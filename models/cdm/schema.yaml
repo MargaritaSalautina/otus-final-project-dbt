@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: cdm
+    database: postgres
+    schema: dbt
+    tables:
+      - name: cv_business_area
+      - name: cv_city_country
+      - name: cv_currency_rate_by_date
+      - name: cv_date
+      - name: cv_goods
+      - name: cv_last_order_status
+      - name: cv_last_order_status_by_date
+      - name: cv_order_attributes
+      - name: cv_order_clients_info
+      - name: cv_order_payer
+      - name: cv_order_receiver
+      - name: cv_order_sender
+      - name: cv_warehouse

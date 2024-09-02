@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: marts
+    database: postgres
+    schema: dbt
+    tables:
+      - name: d_business_area
+      - name: d_client_type
+      - name: d_currency
+      - name: d_date
+      - name: d_geography_structure
+      - name: d_order_status
+      - name: d_warehouse
+      - name: f_good_sales
+      - name: f_order_detalization
+      - name: f_warehouse_loading
