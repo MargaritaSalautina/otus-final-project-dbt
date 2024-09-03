@@ -39934,3 +39934,41 @@ See https://docs.getdbt.com/docs/package-management#section-specifying-package-v
 [0m16:32:44.137118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88d62271c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88d49bee20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f88d49becd0>]}
 [0m16:32:44.139033 [debug] [MainThread]: Flushing usage events
 [0m16:32:44.932356 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-09-03 15:23:12.253842 | 336d272b-2618-4a1f-8043-d255e6f58a47 ==============================
+[0m15:23:12.253842 [info ] [MainThread]: Running with dbt=1.4.0
+[0m15:23:12.256963 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m15:23:12.259208 [debug] [MainThread]: Tracking: tracking
+[0m15:23:12.267901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd840c1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd840b6ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd840b6eb0>]}
+[0m15:23:12.282524 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-fp2eqvqp'
+[0m15:23:12.284509 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/kzzzr/dbtvault.git 8f67def39d1e3209f86c5b38b1f63392"
+
+
+============================== 2024-09-03 15:25:14.535265 | 1487d002-e3c6-4643-8178-6ebe3012a87e ==============================
+[0m15:25:14.535265 [info ] [MainThread]: Running with dbt=1.4.0
+[0m15:25:14.537935 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m15:25:14.541925 [debug] [MainThread]: Tracking: tracking
+[0m15:25:14.551839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc103160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc103d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc1036a0>]}
+[0m15:25:14.556212 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-m4q3_cys'
+[0m15:25:14.558706 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/kzzzr/dbtvault.git 8f67def39d1e3209f86c5b38b1f63392"
+[0m15:27:25.470798 [debug] [MainThread]: STDOUT: "b''"
+[0m15:27:25.472711 [debug] [MainThread]: STDERR: "b"Cloning into '8f67def39d1e3209f86c5b38b1f63392'...\nfatal: unable to access 'https://github.com/kzzzr/dbtvault.git/': Failed to connect to github.com port 443: Connection timed out\n""
+[0m15:27:25.474163 [debug] [MainThread]: command return code=128
+[0m15:27:25.476184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc176fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc1514c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe5bc1513a0>]}
+[0m15:27:25.477792 [debug] [MainThread]: Flushing usage events
+[0m15:27:35.611652 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m15:27:35.614728 [error] [MainThread]: Encountered an error:
+Internal Error
+  Error checking out spec='None' for repo https://github.com/kzzzr/dbtvault.git
+  Cloning into '8f67def39d1e3209f86c5b38b1f63392'...
+  fatal: unable to access 'https://github.com/kzzzr/dbtvault.git/': Failed to connect to github.com port 443: Connection timed out
+
+
+============================== 2024-09-03 15:30:40.525298 | ad5f4de3-2672-4aff-a472-4d4e4efc12a0 ==============================
+[0m15:30:40.525298 [info ] [MainThread]: Running with dbt=1.4.0
+[0m15:30:40.527936 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspace', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m15:30:40.529210 [debug] [MainThread]: Tracking: tracking
+[0m15:30:40.534644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b9704100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b9704cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8b9704670>]}
+[0m15:30:40.538331 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-p7zsjcgf'
+[0m15:30:40.540072 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/kzzzr/dbtvault.git 8f67def39d1e3209f86c5b38b1f63392"

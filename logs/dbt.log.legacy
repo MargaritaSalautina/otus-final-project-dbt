@@ -56,3 +56,4 @@
 2024-09-01 17:44:43.316971 (MainThread): invalid escape sequence '\{'
 2024-09-01 17:44:45.046200 (MainThread): invalid escape sequence '\{'
 2024-09-01 17:44:47.200897 (MainThread): invalid escape sequence '\{'
+2024-09-03 15:27:35.608673 (MainThread): The 'warn' method is deprecated, use 'warning' instead
